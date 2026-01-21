@@ -159,11 +159,11 @@ npm install
 1. Create `.env` file in the `server` folder:
 
 ```env
-MONGODB_URI=mongodb+srv://admin:YOUR_PASSWORD@cluster0.xxxxx.mongodb.net/appointment-booking?retryWrites=true&w=majority
+MONGODB_URI=<YOUR_MONGODB_CONNECTION_STRING>
 PORT=5000
 ```
 
-2. Replace `YOUR_PASSWORD` with your MongoDB password
+2. Replace `<YOUR_MONGODB_CONNECTION_STRING>` with your MongoDB Atlas connection string
 
 ### Step 4: Run the Application
 
