@@ -1,0 +1,28 @@
+{
+  "name": "bookmyslot-server",
+  "version": "1.0.0",
+  "description": "Backend API for BookMySlot appointment booking system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "appointment",
+    "booking",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.4"
+  }
+}

@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* 
+ * ============================================
+ * APPOINTMENT BOOKING SYSTEM - CUSTOM STYLES
+ * ============================================
+ * This file contains custom CSS styles that extend Tailwind CSS.
+ * Tailwind utilities are imported above and can be used anywhere.
+ * 
+ * Color Palette (Earthy Green Theme):
+ * - #F6F0D7 (Cream/Beige)
+ * - #C5D89D (Light Green)
+ * - #9CAB84 (Sage Green)
+ * - #89986D (Olive Green)
+ */
+
+/* Import Google Fonts - Inter for modern, clean typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for a polished look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F0D7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #28b8b9 0%, #2a0755 100%);
+}
+
+/* Glassmorphism card effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(246, 240, 215, 0.5);
+  box-shadow: 0 25px 45px rgba(137, 152, 109, 0.15);
+}
+
+/* Smooth input focus animations */
+.form-input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(156, 171, 132, 0.25);
+}
+
+/* Button gradient effects */
+.btn-primary {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(137, 152, 109, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Success modal animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-animate {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Table row hover effect */
+.table-row-hover:hover {
+  background-color: rgba(156, 171, 132, 0.1);
+}
