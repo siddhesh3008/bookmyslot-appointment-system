@@ -7,6 +7,15 @@ A professional full-stack appointment booking system with user and admin panels.
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
+## 🌐 Live Demo
+
+| Platform | URL |
+|----------|-----|
+| **🖥️ Frontend** | [https://bookmyslot-appointment-system.vercel.app](https://bookmyslot-appointment-system.vercel.app) |
+| **⚙️ Backend API** | [https://bookmyslot-server.onrender.com](https://bookmyslot-server.onrender.com) |
+
+> **Admin Login:** Username: `admin` | Password: `admin123`
+
 ---
 
 ## 🌟 Features
@@ -189,15 +198,20 @@ Open http://localhost:5173 in your browser.
 
 ## 🌐 Deployment
 
+This project is deployed on:
+- **Frontend:** [Vercel](https://bookmyslot-appointment-system.vercel.app)
+- **Backend:** [Render](https://bookmyslot-server.onrender.com)
+
 ### Frontend (Vercel)
 
 1. Push `client` folder to GitHub
 2. Go to [vercel.com](https://vercel.com) and import repository
 3. Set **Root Directory** to `client`
-4. Build Command: `npm run build`
-5. Output Directory: `dist`
-6. Add Environment Variable:
-   - `VITE_API_URL` = Your Render backend URL
+4. Set **Framework Preset** to `Vite`
+5. Build Command: `npm run build`
+6. Output Directory: `dist`
+7. Add Environment Variable:
+   - `VITE_API_URL` = `https://bookmyslot-server.onrender.com`
 
 ### Backend (Render)
 
@@ -206,8 +220,10 @@ Open http://localhost:5173 in your browser.
 3. Set **Root Directory** to `server`
 4. Build Command: `npm install`
 5. Start Command: `npm start`
-6. Add Environment Variable:
+6. Add Environment Variables:
    - `MONGODB_URI` = Your MongoDB Atlas connection string
+   - `PORT` = `5000`
+   - `FRONTEND_URL` = `https://bookmyslot-appointment-system.vercel.app`
 
 ---
 
